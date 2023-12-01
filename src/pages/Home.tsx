@@ -4,6 +4,7 @@ import { Input } from '../components/input/Input';
 import { featuresInfo } from '../constants';
 import { useNavigate } from 'react-router-dom';
 import { validateEmail } from '../utils';
+import check from '../assets/images/icon-list.svg'
 
 export const Home = () => {
   const [formState, setformState] = useState({
@@ -33,10 +34,10 @@ export const Home = () => {
             Stay updated!
           </h1>
           <h3>Join 60,000+ product managers receiving monthly updates on:</h3>
-          <ul className="">
+          <ul className="flex flex-col gap-[10px]">
             {featuresInfo.map((feature) => (
               <li key={feature.id} className="flex items-start gap-4">
-                <img src="src/assets/images/icon-list.svg" alt="icon-list" />
+                <img src={check} alt="icon-list" />
                 <span className="text-base">{feature.text}</span>
               </li>
             ))}

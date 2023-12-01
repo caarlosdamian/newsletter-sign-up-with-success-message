@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '../components/button/Button';
+import icon from '../assets/images/icon-success.svg'
 
 export const Success = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ export const Success = () => {
     md:w-[504px] md:h-[520px] md:rounded-[36px] md:pt-12 md:px-16 md:pb-16">
       <div className="flex flex-col items-start gap-6 ">
         <img
-          src="/src/assets/images/icon-success.svg"
+          src={icon}
           alt="icon-success"
           className="mb-4 md:mb-0"
         />
