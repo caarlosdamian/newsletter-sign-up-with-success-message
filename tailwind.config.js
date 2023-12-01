@@ -7,6 +7,9 @@ export default {
         headerMobile: "url('/src/assets/images/illustration-sign-up-mobile.svg')",
         headerDesktop:"url('/src/assets/images/illustration-sign-up-desktop.svg')",
       },
+      boxShadow: {
+        "btn": "0px 15px 60px 0px rgba(0, 0, 0, 0.25)",
+      },
       colors: {
         primary: {
           paleNavy: '#36384D',
